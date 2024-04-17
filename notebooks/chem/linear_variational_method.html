@@ -599,15 +599,15 @@ except for the presence of this peculiar spikey potential right in the middle of
 <section id="form-of-the-trial-wavefunction">
 <h2>Form of the trial wavefunction<a class="headerlink" href="#form-of-the-trial-wavefunction" title="Permalink to this heading">#</a></h2>
 <p>In particular, we will optimize the trial wavefunction given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-666ec530-acab-4839-ab09-f3d9959c0b1a">
-<span class="eqno">(1)<a class="headerlink" href="#equation-666ec530-acab-4839-ab09-f3d9959c0b1a" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-25776df4-9a60-46df-83f5-8c799563ea31">
+<span class="eqno">(1)<a class="headerlink" href="#equation-25776df4-9a60-46df-83f5-8c799563ea31" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \Phi(x) = \sum_{n=1}^N c_n \psi_n(x)
 \end{equation}\]</div>
 <p>where the expansion coefficients <span class="math notranslate nohighlight">\(c_n\)</span> are real numbers
 and <span class="math notranslate nohighlight">\(\psi_n(x)\)</span> are the energy eigenfunctions of the ordinary particle in a box that has no potential
 between <span class="math notranslate nohighlight">\(x=0\)</span> and <span class="math notranslate nohighlight">\(x=L\)</span>.  In particular, these eigenfunctions have the form</p>
-<div class="amsmath math notranslate nohighlight" id="equation-30c9df59-7989-4e94-89b6-643ae94a2695">
-<span class="eqno">(2)<a class="headerlink" href="#equation-30c9df59-7989-4e94-89b6-643ae94a2695" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-dd637caf-e6ec-4908-8bf8-44b0741b87b1">
+<span class="eqno">(2)<a class="headerlink" href="#equation-dd637caf-e6ec-4908-8bf8-44b0741b87b1" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \psi_n(x) = \sqrt{\frac{2}{10} } {\rm sin}\left(\frac{n \pi x}{10} \right).
 \end{equation}\]</div>
 </section>
@@ -615,8 +615,8 @@ between <span class="math notranslate nohighlight">\(x=0\)</span> and <span clas
 <h2>Form of the energy functional of the trial wavefunction<a class="headerlink" href="#form-of-the-energy-functional-of-the-trial-wavefunction" title="Permalink to this heading">#</a></h2>
 <p>We will seek to minimize the energy functional of the trial wavefunction through the expansion coefficients, where the
 energy functional of the trial wavefunction can be written as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3030fd3f-1ed2-4939-b792-93ca9c16f993">
-<span class="eqno">(3)<a class="headerlink" href="#equation-3030fd3f-1ed2-4939-b792-93ca9c16f993" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-c74dca22-6641-4501-937b-2a5f3791cd92">
+<span class="eqno">(3)<a class="headerlink" href="#equation-c74dca22-6641-4501-937b-2a5f3791cd92" title="Permalink to this equation">#</a></span>\[\begin{equation}
 E_{trial} = \frac{\int_0^{10} \Phi^* (x) \: \hat{H} \: \Phi(x) dx }{\int_0^{10} \Phi^* (x) \: \Phi(x) dx },
 \end{equation}\]</div>
 <p>where we have recognized that the boundaries of the box are at <span class="math notranslate nohighlight">\(x=0\)</span> and <span class="math notranslate nohighlight">\(x=10\)</span>, so our range of integration
@@ -626,15 +626,15 @@ goes between these boundaries.</p>
 <h2>Atomic Units<a class="headerlink" href="#atomic-units" title="Permalink to this heading">#</a></h2>
 <p>We will express our Hamiltonian in atomic units where <span class="math notranslate nohighlight">\(\hbar = 1\)</span> and <span class="math notranslate nohighlight">\(m = 1\)</span>, so we can write the Hamiltonian in
 this unit system as:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2a0f96ce-1b19-441f-85f6-93e2039545b8">
-<span class="eqno">(4)<a class="headerlink" href="#equation-2a0f96ce-1b19-441f-85f6-93e2039545b8" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-009dcc29-e2b9-4455-8784-321ea1bdcde8">
+<span class="eqno">(4)<a class="headerlink" href="#equation-009dcc29-e2b9-4455-8784-321ea1bdcde8" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \hat{H} = -\frac{1}{2} \frac{d^2}{dx^2} + \delta(x-5).
 \end{equation}\]</div>
 <p>We further note that the Hamiltonian can be written as a sum
 of kinetic and potential operators, <span class="math notranslate nohighlight">\(\hat{H} = \hat{T} + \hat{V}\)</span>
 where <span class="math notranslate nohighlight">\(\hat{T} = -\frac{1}{2} \frac{d^2}{dx^2}\)</span> and <span class="math notranslate nohighlight">\(\hat{V} = \delta(x-5)\)</span>.  For the ordinary particle in a box, the Hamiltonian only contains <span class="math notranslate nohighlight">\(\hat{T}\)</span>, so we can note that the particle in a box energy eigenfunctions obey the following eigenvalue equation with the kinetic energy operator (in atomic units)</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e32bf0fe-8636-4000-a7a9-90c4cf09616b">
-<span class="eqno">(5)<a class="headerlink" href="#equation-e32bf0fe-8636-4000-a7a9-90c4cf09616b" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-cacd818d-727f-4972-bb37-792c16df6c91">
+<span class="eqno">(5)<a class="headerlink" href="#equation-cacd818d-727f-4972-bb37-792c16df6c91" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \hat{T} \psi_n(x) = \frac{\pi^2 n^2}{200} \psi_n(x) \equiv E_n \psi_n(x).   
 \end{equation}\]</div>
 </section>
@@ -643,24 +643,24 @@ where <span class="math notranslate nohighlight">\(\hat{T} = -\frac{1}{2} \frac{
 <p>The Linear Variational Method is carried out by minimizing <span class="math notranslate nohighlight">\(E_{trial}\)</span> with respect to the expansion coefficients in <span class="math notranslate nohighlight">\(\Phi(x)\)</span>.  This leads
 to the condition that the partial derivative of the trial energy with
 respect to each expansion coefficient is zero:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-117967b5-29e4-4bfe-aae6-908175605cf1">
-<span class="eqno">(6)<a class="headerlink" href="#equation-117967b5-29e4-4bfe-aae6-908175605cf1" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-4ff76dc0-2f93-465c-af8a-7110970a351e">
+<span class="eqno">(6)<a class="headerlink" href="#equation-4ff76dc0-2f93-465c-af8a-7110970a351e" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \frac{\partial}{\partial c_m} E_{trial} = 0 \; \; \forall \; m.
 \end{equation}\]</div>
 <p>When this is true, the trial energy and the expansion
 coefficients satisfy the following equations:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-05339bea-9e61-4093-85ce-c4cfcfce0b9b">
-<span class="eqno">(7)<a class="headerlink" href="#equation-05339bea-9e61-4093-85ce-c4cfcfce0b9b" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-a6bc1904-3ca3-4560-8403-85a7c77c2f35">
+<span class="eqno">(7)<a class="headerlink" href="#equation-a6bc1904-3ca3-4560-8403-85a7c77c2f35" title="Permalink to this equation">#</a></span>\[\begin{equation}
 E_{trial} c_m = \sum_{n=1}^N H_{nm} c_n,
 \end{equation}\]</div>
 <p>where</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fafe9bc8-0484-4874-bb7a-be0f146d705a">
-<span class="eqno">(8)<a class="headerlink" href="#equation-fafe9bc8-0484-4874-bb7a-be0f146d705a" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-5786214c-d77e-4903-95eb-9b10127668dd">
+<span class="eqno">(8)<a class="headerlink" href="#equation-5786214c-d77e-4903-95eb-9b10127668dd" title="Permalink to this equation">#</a></span>\[\begin{equation}
 H_{nm} = \int_0^{10} \psi^*_n(x) \hat{H} \psi_m(x) dx. 
 \end{equation}\]</div>
 <p>This can be written as an eigenvalue equation</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bae9b3a3-3eaf-41e0-8073-e76da235b6ce">
-<span class="eqno">(9)<a class="headerlink" href="#equation-bae9b3a3-3eaf-41e0-8073-e76da235b6ce" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-e015e9e7-5a76-48c1-9326-a1d86649ec71">
+<span class="eqno">(9)<a class="headerlink" href="#equation-e015e9e7-5a76-48c1-9326-a1d86649ec71" title="Permalink to this equation">#</a></span>\[\begin{equation}
 {\bf H} {\bf c} = E_{trial} {\bf c},
 \end{equation}\]</div>
 <p>where <span class="math notranslate nohighlight">\({\bf H}\)</span> is the matrix whose elements are given by <span class="math notranslate nohighlight">\(H_{nm}\)</span> and <span class="math notranslate nohighlight">\({\bf c}\)</span> is the vector of coefficients.</p>
@@ -670,13 +670,13 @@ H_{nm} = \int_0^{10} \psi^*_n(x) \hat{H} \psi_m(x) dx.
 <ol class="arabic simple">
 <li><p>The matrix element <span class="math notranslate nohighlight">\(H_{nm}\)</span> can be expressed as a sum of kinetic and potential matrix elements, <span class="math notranslate nohighlight">\(T_{nm} + V_{nm}\)</span> where</p></li>
 </ol>
-<div class="amsmath math notranslate nohighlight" id="equation-bd9fc43a-7417-4598-9039-65d46f527d4d">
-<span class="eqno">(10)<a class="headerlink" href="#equation-bd9fc43a-7417-4598-9039-65d46f527d4d" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-6fda2fdb-6b5d-4955-8747-11e5f9510f5d">
+<span class="eqno">(10)<a class="headerlink" href="#equation-6fda2fdb-6b5d-4955-8747-11e5f9510f5d" title="Permalink to this equation">#</a></span>\[\begin{equation}
 T_{nm} = \int_0^{10} \psi^*_n(x) \hat{T} \psi_m(x) dx 
 \end{equation}\]</div>
 <p>and</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a17a1660-3f9b-4cae-874c-db0696f62d63">
-<span class="eqno">(11)<a class="headerlink" href="#equation-a17a1660-3f9b-4cae-874c-db0696f62d63" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-9f4defaf-f669-47d5-b83a-510f6f4f0ed0">
+<span class="eqno">(11)<a class="headerlink" href="#equation-9f4defaf-f669-47d5-b83a-510f6f4f0ed0" title="Permalink to this equation">#</a></span>\[\begin{equation}
 V_{nm} = \int_0^{10} \psi^*_n(x) \hat{V} \psi_m(x) dx. 
 \end{equation}\]</div>
 <p>Write a general expression for the elements of <span class="math notranslate nohighlight">\(T_{nm}\)</span> and <span class="math notranslate nohighlight">\(V_{nm}\)</span>
@@ -928,7 +928,7 @@ The ground-state eigenvector can be accessed as a slice of <code class="docutils
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fbc7c32e7f0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f8f580f9520&gt;
 </pre></div>
 </div>
 <img alt="../../_images/da086a0834315a8e80e3aea64c9937d08cc777cec87e808f5fe537a5cd5fee5e.png" src="../../_images/da086a0834315a8e80e3aea64c9937d08cc777cec87e808f5fe537a5cd5fee5e.png" />
@@ -951,18 +951,18 @@ Here we will look at the behavior of the total energy, the kinetic energy, and t
 trial wavefunction as a function of basis set size.</p>
 <p>For a given trial wavefunction (as determined by the variationally determined ground-state eigenvector <span class="math notranslate nohighlight">\({\bf c}\)</span>,
 we can define the total energy as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-251081cc-f9dc-4d79-835f-f864391463c2">
-<span class="eqno">(12)<a class="headerlink" href="#equation-251081cc-f9dc-4d79-835f-f864391463c2" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-01773885-bb49-4d6c-a010-3090d47cfc46">
+<span class="eqno">(12)<a class="headerlink" href="#equation-01773885-bb49-4d6c-a010-3090d47cfc46" title="Permalink to this equation">#</a></span>\[\begin{equation}
 E = {\bf c}^t {\bf H} {\bf c} 
 \end{equation}\]</div>
 <p>the kinetic energy as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2d4afddb-e289-4741-bf74-2d98a3cb6366">
-<span class="eqno">(13)<a class="headerlink" href="#equation-2d4afddb-e289-4741-bf74-2d98a3cb6366" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-da886078-54cb-46d9-af15-8bd55329a713">
+<span class="eqno">(13)<a class="headerlink" href="#equation-da886078-54cb-46d9-af15-8bd55329a713" title="Permalink to this equation">#</a></span>\[\begin{equation}
 T = {\bf c}^t {\bf T} {\bf c},
 \end{equation}\]</div>
 <p>and the potential energy as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4a4db215-1f32-4375-af3b-6fa8ad55eb0c">
-<span class="eqno">(14)<a class="headerlink" href="#equation-4a4db215-1f32-4375-af3b-6fa8ad55eb0c" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-1c488ad4-da0a-4941-9f16-e7824037badb">
+<span class="eqno">(14)<a class="headerlink" href="#equation-1c488ad4-da0a-4941-9f16-e7824037badb" title="Permalink to this equation">#</a></span>\[\begin{equation}
 V = {\bf c}^t {\bf V} {\bf c}.
 \end{equation}\]</div>
 <p>where <span class="math notranslate nohighlight">\({\bf c}^t\)</span> is just the transpose of <span class="math notranslate nohighlight">\({\bf c}\)</span>. We will perform this computation for
@@ -1009,7 +1009,7 @@ ground state and first excited state of the ordinary particle in a box (<span cl
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fbc79fccbe0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f8f55ccc460&gt;
 </pre></div>
 </div>
 <img alt="../../_images/0847d41b3d70d5e639533a3a8ac3daa2ba4dbd94fc8b995f363784cceb23dabe.png" src="../../_images/0847d41b3d70d5e639533a3a8ac3daa2ba4dbd94fc8b995f363784cceb23dabe.png" />
